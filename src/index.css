@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #e5e5e5; /* Background abu-abu agar card terlihat jelas */
+  background-color: #e5e5e5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@ body {
 
 .card {
   background: #ffffff;
-  width: 370px; /* Lebar disesuaikan agar mirip dengan gambar */
+  width: 370px;
   padding: 15px 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -39,40 +39,35 @@ body {
   cursor: pointer;
 }
 
-/* Hover effect agar user tahu area bisa diklik */
 .item-row:hover .label {
   color: #111;
 }
 
 .label {
   font-size: 16px;
-  color: #1f2128; /* Warna teks gelap sesuai desain */
+  color: #1f2128;
   font-weight: 400;
   cursor: pointer;
   user-select: none;
 }
 
-/* Styling Divider Garis */
 .divider {
   height: 1px;
-  background-color: #eeeeee; /* Garis pemisah halus */
+  background-color: #eeeeee;
   width: 100%;
   margin: 5px 0;
 }
 
-/* Checkbox Styling */
 .custom-checkbox {
   width: 23px;
   height: 23px;
   cursor: pointer;
   border-radius: 6px;
   border: 1px solid #bdbdbd;
-  /* Menggunakan accent-color untuk browser modern agar warna check biru/sesuai OS */
   accent-color: #2469f6;
   margin: 0;
 }
 
-/* Footer & Button Styling */
 .footer {
   padding-top: 15px;
   padding-bottom: 5px;
@@ -80,19 +75,19 @@ body {
 
 .btn-done {
   width: 100%;
-  background-color: #ffce22; /* Warna Kuning sesuai gambar */
+  background-color: #ffce22;
   color: #1f2128;
   border: none;
   padding: 12px;
   font-size: 14px;
-  border-radius: 4px; /* Border radius tombol agak kecil sesuai gambar */
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s ease;
   font-family: "Montserrat", sans-serif;
 }
 
 .btn-done:hover {
-  background-color: #ffd644; /* Efek hover sedikit lebih terang */
+  background-color: #ffd644;
 }
 
 .list-container {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./index.css";
 
 const PageSelector = () => {
-  // Data awal halaman
+
   const initialPages = [
     { id: "page1", label: "Page 1", isChecked: false },
     { id: "page2", label: "Page 2", isChecked: false },
@@ -13,14 +13,12 @@ const PageSelector = () => {
   const [pages, setPages] = useState(initialPages);
   const [isAllChecked, setIsAllChecked] = useState(false);
 
-  // Effect untuk memantau perubahan pada individual pages
-  // Jika semua page tercentang, maka "All pages" ikut tercentang
+
   useEffect(() => {
     const allSelected = pages.every((page) => page.isChecked);
     setIsAllChecked(allSelected);
   }, [pages]);
 
-  // Handle klik pada checkbox "All pages"
   const handleAllCheck = () => {
     const newStatus = !isAllChecked;
     setIsAllChecked(newStatus);
@@ -31,7 +29,7 @@ const PageSelector = () => {
     setPages(updatedPages);
   };
 
-  // Handle klik pada checkbox individual
+
   const handlePageCheck = (id) => {
     const updatedPages = pages.map((page) =>
       page.id === id ? { ...page, isChecked: !page.isChecked } : page
@@ -39,7 +37,7 @@ const PageSelector = () => {
     setPages(updatedPages);
   };
 
-  // Handle tombol Done
+
   const handleDone = () => {
     const selectedIds = pages
       .filter((p) => p.isChecked)
